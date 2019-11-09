@@ -1,0 +1,8 @@
+# In your static/admin/config.yml file
+
+backend:
+    name: github
+    repo: andrewmcodes/railstutorials
+
+media_folder: static/assets
+public_folder: assets
