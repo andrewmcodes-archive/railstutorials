@@ -31,6 +31,8 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-netlify-cms`,
+    `gatsby-plugin-postcss`,
+    `gatsby-transformer-yaml`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
