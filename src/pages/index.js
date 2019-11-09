@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import { graphql } from 'gatsby'
 
 import Layout from "../components/layout"
@@ -13,8 +12,9 @@ const IndexPage = (props) => {
   <Layout>
     <SEO title="Home" />
     <Hero title={data.title} intro={data.intro} image={data.image} />
-
-    <Link to="/page-2/">Go to page 2</Link>
+    <div className="max-w-xl mx-auto py-8">
+      <p>Stuff goes in here</p>
+    </div>
   </Layout>
   )
 }
