@@ -9,3 +9,15 @@
     - education
   authors:
     - Andrew Mason
+
+- title: 'Title 2'
+  summary: 'This is a summary'
+  link: https://www.example.com/
+  formats:
+    - text
+  date: 2019-10-09
+  topics:
+    - business
+    - education
+  authors:
+    - John Espinosa
