@@ -20,7 +20,8 @@ const IndexPage = props => {
         intro={indexData.intro}
         image={indexData.image}
       />
-      <div className="max-w-xl mx-auto py-8">
+      <div className="flex flex-col items-center max-w-4xl mx-auto py-8">
+
         {sources.map(source => (
           <Source
             key={source.node.title}
@@ -33,6 +34,7 @@ const IndexPage = props => {
             summary={source.node.summary}
           />
         ))}
+
       </div>
     </Layout>
   )
