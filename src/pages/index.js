@@ -45,7 +45,7 @@ export const query = graphql`
         node {
           authors
           link
-          date
+          date(formatString: "MMM DD, YYYY")
           formats
           topics
           title
