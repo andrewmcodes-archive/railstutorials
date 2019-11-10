@@ -1,11 +1,12 @@
-import React from "react"
-import { Link } from "gatsby"
-import { graphql } from "gatsby"
+import React from 'react'
+import { Link } from 'gatsby'
+import { graphql } from 'gatsby'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Hero from "../components/hero"
-import Source from "../components/source"
+import Layout from '../components/layout'
+import SEO from '../components/seo'
+import Hero from '../components/hero'
+import Source from '../components/SourcesListCard'
+import SourcesList from '../components/SourcesList'
 
 const IndexPage = props => {
   const indexData =
@@ -14,25 +15,14 @@ const IndexPage = props => {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title='Home' />
       <Hero
         title={indexData.title}
         intro={indexData.intro}
         image={indexData.image}
       />
-      <div className="max-w-xl mx-auto py-8">
-        {sources.map(source => (
-          <Source
-            key={source.node.title}
-            authors={source.node.authors}
-            link={source.node.link}
-            date={source.node.date}
-            formats={source.node.formats}
-            topics={source.node.topics}
-            title={source.node.title}
-            summary={source.node.summary}
-          />
-        ))}
+      <div className='max-w-xl mx-auto py-8'>
+        <SourcesList sourceEdges={sources} />
       </div>
     </Layout>
   )
@@ -40,14 +30,14 @@ const IndexPage = props => {
 
 export const query = graphql`
   query {
-    allSourcesYaml {
+    allSourcesYaml(sort: { fields: [date], order: DESC }) {
       edges {
         node {
           authors
           link
           date
           formats
-          topics
+          tags
           title
           summary
         }
@@ -89,7 +79,7 @@ export default IndexPage
 //           link
 //           date
 //           formats
-//           topics
+//           tags
 //           title
 //           summary
 //         }

@@ -6,9 +6,9 @@ const Hero = ({ title, intro, image }) => (
     <div className='container mx-auto max-w-xl py-8 font-bold leading-normal'>
       <div className='flex'>
         <img className='h-16' width='64px' height='64px' src={image} alt='photo of Ruby' />
-        <div class="ml-4">
+        <div className="ml-4">
           <h3 className='text-2xl'>{title}</h3>
-          <p className>{intro}</p>
+          <p>{intro}</p>
         </div>
       </div>
     </div>
@@ -18,13 +18,13 @@ const Hero = ({ title, intro, image }) => (
 Hero.propTypes = {
   title: PropTypes.string,
   intro: PropTypes.string,
-  image: PropTypes.object
+  image: PropTypes.string
 }
 
 Hero.defaultProps = {
   title: ``,
   intro: ``,
-  image: NaN
+  image: ``
 }
 
 export default Hero
