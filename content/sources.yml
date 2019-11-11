@@ -1,18 +1,18 @@
-- title: 'Title'
-  summary: 'This is a summary'
-  link: https://www.example.com/
+- title: 'RailsGuides'
+  summary: 'Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia?'
+  link: https://guides.rubyonrails.org/
   formats:
     - text
-  date: 2019-10-09
+  date: 2019-11-09
   topics:
     - business
     - education
   authors:
     - Andrew Mason
 
-- title: 'Title 2'
-  summary: 'This is a summary'
-  link: https://www.example.com/
+- title: 'RailsTutorial'
+  summary: 'Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia?'
+  link: https://www.railstutorial.org/
   formats:
     - text
   date: 2019-10-09
